@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <title>Nook Inc. Villager Spotlight</title>
+</head>
+<body>
+
+  <header>
+    <img id="music-btn" src="images/music-removebg-preview.png" class="music-icon" alt="Toggle Music" style="cursor: pointer;" width="40">
+    <audio id="background-music" src="audio/kk_disco.mp3" loop></audio>
+    <div class="skip">
+      <a href="#main">Skip to Main Content</a>
+    </div>
+
+    <div class="header-top">
+      <img src="images/nook_inc_logo-removebg-preview.png" alt="Nook Inc. Logo" class="nook-logo" />
+      <h1>Island Getaway Package</h1>
+    </div>
+
+    <nav class="navibar">
+      <ul class="nav-list">
+        <li><a href="index.html">Welcome Aboard!</a></li>
+        <li><a href="staff.html">Meet our Staff!</a></li>
+        <li class="active"><a href="neighbors.html">Meet Your New Neighbors!</a></li>
+        <li><a href="package.html">Package Deals!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <h2>🐾 Island Neighbors You'll Love</h2>
+      <p>Each island is home to a cast of delightful animal villagers. With over 400+ possibilities, no two islands are ever the same!</p>
+    </section>
+
+    <section class="section">
+      <h2>Who Might You Meet?</h2>
+
+      <div class="villager-list">
+        <div class="villager">
+          <h3>Audie</h3>
+          <div class="alternate-one">
+            <img class="character-img" src="images/Audie_NH.webp" alt="an image of the peppy wolf Audie">
+            <div class="text-box">
+              <p>A Peppy wolf who brings vacation energy and fierce fashion wherever she goes!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="villager">
+          <h3>Raymond</h3>
+          <div class="alternate-two">
+            <div class="text-box">
+              <p>Classy, cool, and a little mysterious — this smug cat is the talk of the plaza.</p>
+            </div>
+            <img class="character-img" src="images/raymond.png" alt="an image of the smug cat Raymond">
+          </div>
+        </div>
+
+        <div class="villager">
+          <h3>Merengue</h3>
+          <div class="alternate-one">
+            <img class="character-img" src="images/Merengue_NH.webp" alt="an image of the normal rhino Merengue">
+            <div class="text-box">
+              <p>This normal rhino has a strawberry horn and a heart of gold. Also, she bakes!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="villager">
+          <h3>Bam</h3>
+          <div class="alternate-two">
+            <div class="text-box">
+              <p>A jock deer who’s always ready to race, jump, and cheer you on!</p>
+            </div>
+            <img class="character-img" src="images/bam.png" alt="an image of the jock deer Bam">
+          </div>
+        </div>
+
+        <div class="villager">
+          <h3>Coco</h3>
+          <div class="alternate-one">
+            <img class="character-img" src="images/Coco_NH.webp" alt="an image of the normal bunny Coco">
+            <div class="text-box">
+              <p>A normal rabbit who's quiet, kind, and a little spooky. Her gyroid face hides a deep soul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Build Bonds, Not Just your island</h2>
+      <p>Villagers become part of your island family. Celebrate birthdays, send gifts, and build memories one interaction at a time.</p>
+      <div class="alternate-one">
+        <figure class="polaroid">
+          <img src="images/happy-birthday!.jpg" alt="villagers celebrating a birthday">
+        </figure>
+        <figure class="polaroid">
+          <img src="images/gift-giving.webp" alt="a resident giving a gift to Tangy the peppy cat">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>&#x1F382; Today’s Birthday Villager</h2>
+      <div id="birthday-message" class="birthday-box"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&#x1F4E6;  Apply now with Nook Inc. — and start your island adventure today! |</p>
+    <p>© Copyright <span id="year"></span> Nook Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="js/birthdays.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/music.js" defer></script>
+</body>
+</html>

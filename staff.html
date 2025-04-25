@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet the Staff | Nook Inc.</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+
+  <header>
+    <img id="music-btn" src="images/music-removebg-preview.png" class="music-icon" alt="Toggle Music" style="cursor: pointer;" width="40">
+    <audio id="background-music" src="audio/kk_disco.mp3" loop></audio>
+    <div class="skip">
+      <a href="#main">Skip to Main Content</a>
+    </div>
+
+    <div class="header-top">
+      <img src="images/nook_inc_logo-removebg-preview.png" alt="Nook Inc. Logo" class="nook-logo" />
+      <h1>island getaway package</h1>
+    </div>
+
+    <nav class="navibar">
+      <ul class="nav-list">
+        <li><a href="index.html">Welcome Aboard!</a></li>
+        <li class="active"><a href="staff.html">Meet our Staff!</a></li>
+        <li><a href="neighbors.html">Meet Your New Neighbors!</a></li>
+        <li><a href="package.html">Package Deals!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="nook">
+      <h2>Tom Nook - The Island CEO</h2>
+      <img class="character-img" src="images/Tom_Nook.png" alt="an image of our lord and savior Tom Nook"/>
+      <div class="staff-box">
+        <p>Tom Nook is the mastermind behind the Nook Inc. Island Getaway Package. With his sharp business sense and deep love for island life, he’s here to make your new start possible! A bit of a workaholic, Tom’s always thinking of new ways to help make your life on the island as comfortable as possible.</p>
+        <p><strong>Favorite Quote:</strong> "A little hard work can go a long way... especially when you're doing it on a deserted island."</p>
+      </div>
+    </section>
+
+    <section id="nooklings">
+      <h2>Timmy & Tommy - The Hardworking Nooklings</h2>
+      <img class="character-img" src="images/Timmy_and_Tommy_NH.webp" alt="an image of our lord and savior Tom Nook"/>
+      <div class="staff-box">
+        <p>Timmy and Tommy are Tom Nook’s loyal nephews, and they’re eager to assist you with all things island-related! Whether you’re looking to buy supplies, upgrade your house, or just chat about the latest Nook Inc. products, these two are always ready to lend a hand. Their cheerful attitudes and dedication to Nook Inc. make them the perfect addition to the team.</p>
+        <p><strong>Favorite Quote:</strong> "We're always here to help you build the island of your dreams!" – Timmy and Tommy</p>
+      </div>
+    </section>
+
+    <section id="isabelle">
+      <h2>Isabelle - The Heart of Resident Services</h2>
+      <img class="character-img" src="images/Isabelle_NH.webp" alt="an image of our Isabelle"/>
+      <div class="staff-box">
+        <p>Isabelle is the cheerful and hardworking secretary of Resident Services. She’s there to help with any questions, problems, or general advice you need to make your life on the island better. Whether you're looking for an island upgrade, organizing events, or just need a friendly face to talk to, Isabelle’s got your back. Plus, her love for nature and her warm, welcoming personality make her an island gem!</p>
+        <p><strong>Favorite Quote:</strong> "I may be a little too into paperwork... but I do love a good festival!"</p>
+      </div>
+    </section>
+
+    <section id="blathers">
+      <h2>Blathers - The Museum Curator</h2>
+      <img class="character-img" src="images/Blathers_NH.webp" alt="an image of our lord and savior Tom Nook"/>
+      <div class="staff-box">
+        <p>Blathers runs the island's Museum, and he's always excited (and a bit nervous) about collecting the diverse bugs, fish, fossils, and art you bring in. Blathers is passionate about the island's wildlife and works tirelessly to make sure all your donations are properly displayed for future generations.</p>
+        <p><strong>Favorite Quote:</strong> "Please... don’t make me talk about bugs again. But yes, donate as much as you can!"</p>
+      </div>
+    </section>
+
+    <section id="slider">
+      <h2>K.K. Slider - The Island's Musical Talent</h2>
+      <img class="character-img" src="images/K.K._Slider_NH.webp" alt="an image of our lord and savior Tom Nook"/>
+      <div class="staff-box">
+        <p>K.K. Slider is the resident musician, and every Saturday night, he performs live at your island’s plaza. He’s always ready to bring the island to life with his soothing guitar tunes and charming melodies. Want to request a song? K.K.'s got it covered.</p>
+        <p><strong>Favorite Quote:</strong> "Music is the best way to relax and let your heart wander."</p>
+      </div>
+    </section>
+
+    <section id="dodo">
+      <h2>Orville and Wilbur - Dodo Airlines</h2>
+      <img class="character-img" src="images/Orville_&_Wilbur_NH.png" alt="an image of our lord and savior Tom Nook"/>
+      <div class="staff-box">
+        <p>Orville and Wilbur are the quirky, dependable pilots behind Dodo Airlines. These two are always ready to fly you to new islands or bring visitors to your own. Wilbur’s always the one to take off, and Orville handles the paperwork (though he’s still learning). Together, they’re a dynamic duo in the air!</p>
+        <p><strong>Favorite Quote:</strong> "Wherever you want to go, we'll get you there!" – Orville</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&#x1F4E6; Apply now with Nook Inc. — and start your island adventure today!</p>
+    <p>© Copyright <span id="year"></span> Nook Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="js/music.js" defer></script>
+</body>
+</html>

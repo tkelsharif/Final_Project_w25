@@ -1,0 +1,432 @@
+.skip a {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background-color: #fff5da;
+  color: #2c5e3f;
+  font-family: 'Courier New', monospace;
+  padding: 0.5rem 1rem;
+  border: 3px solid #d6b46a;
+  border-radius: 12px;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 1rem;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+.skip a:focus {
+  top: 10px;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+  background: #eafbe7;
+  margin: 0;
+  padding: 0;
+  color: #83492e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: url("../images/cursor.cur"), pointer;
+}
+
+header {
+  background-color: #adebad;
+  padding: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 4px solid #90c98b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.nook-logo {
+  height: 100px;
+  width: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #2c5e3f;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  background-color: #e6f5e9;
+  border: 2px solid #90c98b;
+  border-radius: 10px;
+}
+
+.nav-list li {
+  margin: 0.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2c5e3f;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list .active a {
+  background-color: #c9ebc3;
+}
+
+footer {
+  background-color: #adebad;
+  text-align: center;
+  padding: 1rem;
+}
+
+#music-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background-image: url('images/music-note.png');
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.music-icon {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#music-btn:hover {
+  opacity: 0.8;
+}
+
+
+.house-tier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.diy-card {
+  background-color: #fff5da;
+  border: 4px solid #d6b46a;
+  border-radius: 20px;
+  box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  padding: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.diy-card:hover {
+  transform: scale(1.03);
+}
+
+.diy-title {
+  font-size: 1.4rem;
+  color: #4d2600;
+  margin-bottom: 0.5rem;
+}
+
+.diy-price {
+  font-size: 1.2rem;
+  color: #a0522d;
+  margin-bottom: 1rem;
+}
+
+.diy-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diy-features li {
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted #c9a36d;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  border-bottom: 1px dashed #ccc;
+  padding: 0.5rem;
+}
+
+.faq, .testimonials, .contact {
+  background: #f7fff5;
+  border-left: 6px solid #adebad;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+}
+
+.character-img {
+  width: 200px;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.life-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.perks-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.alternate-one{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.alternate-two{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.life-list {
+  width: 50%;
+  text-align: left;
+  padding-right: 2rem;
+  color: #83492e;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.life-list h2 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  color: #83492e;
+}
+
+.life-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.life-list li {
+  margin-bottom: 1rem;
+}
+
+.life-list p {
+  margin-top: 1rem;
+}
+
+.polaroid {
+  width: 50%;
+  max-width: 100%;
+  background: white;
+  padding: 1rem 1rem 2rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.polaroid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#life-outside-classroom h2,
+#whats-included h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a7d46;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.birthday-box {
+  background-color: #fff8dc;
+  border: 2px solid #ffcb77;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 400px;
+  font-family: 'Courier New', monospace;
+}
+
+.center-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.center-section img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.villager-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 2em 0;
+  gap: 20px;
+}
+
+.villager-review {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ✨ SUPER BIG SPEECH BUBBLE STYLE ✨ */
+.dialogue-bubble {
+  width: 100vw;
+  max-width: 100%;
+  background-image: url('../images/speech-bubble-removebg-preview.png'); /* use your large image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+  margin: 2rem 0;
+  position: relative;
+  min-height: 400px;
+}
+
+.dialogue-bubble img {
+  width: 180px;
+  max-width: 40%;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.dialogue-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem;
+  z-index: 2;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.staff-box {
+  background-color: #fff8dc;
+  border: 2px solid #ffcb77;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+    background-color: #fff8dc;
+    border: 2px solid #ffcb77;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    text-align: left; /* important: left-aligns text */
+    font-family: 'Courier New', monospace;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-box ul {
+  padding-left: 1.5rem; /* gives space for bullets */
+  list-style-position: outside; /* ensures bullets are outside text */
+  margin: 0;
+}
+.text-box li {
+  display: list-item;
+  margin-bottom: 0.5em;
+}
+.polaroid-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  flex-wrap: wrap; /* allows responsiveness */
+}
+
+
+
+@media (max-width: 700px) {
+    .life-container,
+    .perks-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .section {
+      padding: 1rem; /* Adds padding inside the container */
+    }
+  }
+
+  body {
+    padding: 0 1rem;
+  }
